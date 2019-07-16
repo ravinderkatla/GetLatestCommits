@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity  {
 
         recyclerView.setAdapter(recyclerViewAdapter);
 
+
         apiInterface.getCommits("ravinderkatla","MyCommitsFromGit").enqueue(new Callback<List<MyCommits>>() {
             @Override
             public void onResponse(Call<List<MyCommits>> call, Response<List<MyCommits>> response) {
