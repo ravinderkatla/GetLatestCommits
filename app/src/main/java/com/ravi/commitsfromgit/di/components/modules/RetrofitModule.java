@@ -35,6 +35,7 @@ public class RetrofitModule {
         return new OkHttpClient.Builder()
                 .addInterceptor(httpLoggingInterceptor)
                 .build();
+
     }
 
     @Provides
