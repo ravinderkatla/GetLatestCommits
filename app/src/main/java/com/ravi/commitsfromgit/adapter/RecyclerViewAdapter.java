@@ -32,6 +32,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.txtName.setText(data.get(position).getCommit().getAuthor().getName());
         holder.txtCommitId.setText(data.get(position).getSha());
+
         holder.txtCommitMessage.setText(data.get(position).getCommit().getMessage());
     }
 
