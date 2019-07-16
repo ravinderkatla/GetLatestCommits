@@ -27,6 +27,7 @@ public class RetrofitModule {
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build();
+
     }
 
     @Provides
