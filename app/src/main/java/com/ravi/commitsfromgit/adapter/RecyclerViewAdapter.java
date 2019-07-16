@@ -18,7 +18,6 @@ import javax.inject.Inject;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     private List<MyCommits> data;
 
-
     @Inject
     public RecyclerViewAdapter() {
         data = new ArrayList<>();
